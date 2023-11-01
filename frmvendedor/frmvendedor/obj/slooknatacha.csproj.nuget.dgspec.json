@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natacha.rtorres\\source\\repos\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {}
+    "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natacha.rtorres\\source\\repos\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {
+    "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natacha.rtorres\\source\\repos\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
+        "projectUniqueName": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
         "projectName": "slooknatacha",
-        "projectPath": "C:\\Users\\natacha.rtorres\\source\\repos\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
+        "projectPath": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
         "packagesPath": "C:\\Users\\natacha.rtorres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natacha.rtorres\\source\\repos\\frmvendedor\\frmvendedor\\obj\\",
+        "outputPath": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
