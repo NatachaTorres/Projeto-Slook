@@ -1,4 +1,4 @@
-﻿namespace frmvendedor
+﻿namespace slooknatacha
 {
     partial class frmVendedor
     {
@@ -31,6 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cboufloja = new System.Windows.Forms.ComboBox();
             this.btoprequisar = new System.Windows.Forms.Button();
             this.txtnumeroloja = new System.Windows.Forms.NumericUpDown();
             this.txtdataloja = new System.Windows.Forms.MaskedTextBox();
@@ -45,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cbostatusloja = new System.Windows.Forms.ComboBox();
-            this.txtufloja = new System.Windows.Forms.MaskedTextBox();
             this.txtcnpjloja = new System.Windows.Forms.MaskedTextBox();
             this.txtceploja = new System.Windows.Forms.MaskedTextBox();
             this.txtbairroloja = new System.Windows.Forms.TextBox();
@@ -67,6 +67,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.cbouf = new System.Windows.Forms.ComboBox();
             this.txtnumero = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtnascimento = new System.Windows.Forms.MaskedTextBox();
@@ -77,7 +78,6 @@
             this.txttelefone2 = new System.Windows.Forms.MaskedTextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.txtuf = new System.Windows.Forms.MaskedTextBox();
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
             this.txtcep = new System.Windows.Forms.MaskedTextBox();
             this.txtbairro = new System.Windows.Forms.TextBox();
@@ -137,6 +137,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cboufloja);
             this.tabPage1.Controls.Add(this.btoprequisar);
             this.tabPage1.Controls.Add(this.txtnumeroloja);
             this.tabPage1.Controls.Add(this.txtdataloja);
@@ -151,7 +152,6 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.cbostatusloja);
-            this.tabPage1.Controls.Add(this.txtufloja);
             this.tabPage1.Controls.Add(this.txtcnpjloja);
             this.tabPage1.Controls.Add(this.txtceploja);
             this.tabPage1.Controls.Add(this.txtbairroloja);
@@ -179,6 +179,42 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "LOJA";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cboufloja
+            // 
+            this.cboufloja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboufloja.FormattingEnabled = true;
+            this.cboufloja.Items.AddRange(new object[] {
+            "AC",
+            "AM",
+            "RR",
+            "PA",
+            "AP",
+            "TO",
+            "MA",
+            "PI",
+            "CE",
+            "RN",
+            "PB",
+            "PE",
+            "AL",
+            "SE",
+            "BA",
+            "MG",
+            "ES",
+            "RJ",
+            "SP",
+            "PR",
+            "SC",
+            "RS",
+            "MS",
+            "MT",
+            "GO",
+            "DF"});
+            this.cboufloja.Location = new System.Drawing.Point(491, 462);
+            this.cboufloja.Name = "cboufloja";
+            this.cboufloja.Size = new System.Drawing.Size(204, 23);
+            this.cboufloja.TabIndex = 64;
             // 
             // btoprequisar
             // 
@@ -268,7 +304,7 @@
             // txttelefone1loja
             // 
             this.txttelefone1loja.Location = new System.Drawing.Point(27, 305);
-            this.txttelefone1loja.Mask = "#####-###";
+            this.txttelefone1loja.Mask = "(##) # ####-####";
             this.txttelefone1loja.Name = "txttelefone1loja";
             this.txttelefone1loja.Size = new System.Drawing.Size(160, 23);
             this.txttelefone1loja.TabIndex = 12;
@@ -276,7 +312,7 @@
             // txttelefone2loja
             // 
             this.txttelefone2loja.Location = new System.Drawing.Point(27, 376);
-            this.txttelefone2loja.Mask = "#####-###";
+            this.txttelefone2loja.Mask = "(##) # ####-####";
             this.txttelefone2loja.Name = "txttelefone2loja";
             this.txttelefone2loja.Size = new System.Drawing.Size(160, 23);
             this.txttelefone2loja.TabIndex = 14;
@@ -303,6 +339,7 @@
             // 
             // cbostatusloja
             // 
+            this.cbostatusloja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbostatusloja.FormattingEnabled = true;
             this.cbostatusloja.Items.AddRange(new object[] {
             "ATIVO",
@@ -311,14 +348,6 @@
             this.cbostatusloja.Name = "cbostatusloja";
             this.cbostatusloja.Size = new System.Drawing.Size(227, 23);
             this.cbostatusloja.TabIndex = 11;
-            // 
-            // txtufloja
-            // 
-            this.txtufloja.Location = new System.Drawing.Point(491, 462);
-            this.txtufloja.Mask = "LL";
-            this.txtufloja.Name = "txtufloja";
-            this.txtufloja.Size = new System.Drawing.Size(209, 23);
-            this.txtufloja.TabIndex = 10;
             // 
             // txtcnpjloja
             // 
@@ -503,6 +532,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cbouf);
             this.tabPage2.Controls.Add(this.txtnumero);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.txtnascimento);
@@ -513,7 +543,6 @@
             this.tabPage2.Controls.Add(this.txttelefone2);
             this.tabPage2.Controls.Add(this.label29);
             this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.txtuf);
             this.tabPage2.Controls.Add(this.txtcpf);
             this.tabPage2.Controls.Add(this.txtcep);
             this.tabPage2.Controls.Add(this.txtbairro);
@@ -538,6 +567,42 @@
             this.tabPage2.Text = "DADOS PESSOAIS";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // cbouf
+            // 
+            this.cbouf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbouf.FormattingEnabled = true;
+            this.cbouf.Items.AddRange(new object[] {
+            "AC",
+            "AM",
+            "RR",
+            "PA",
+            "AP",
+            "TO",
+            "MA",
+            "PI",
+            "CE",
+            "RN",
+            "PB",
+            "PE",
+            "AL",
+            "SE",
+            "BA",
+            "MG",
+            "ES",
+            "RJ",
+            "SP",
+            "PR",
+            "SC",
+            "RS",
+            "MS",
+            "MT",
+            "GO",
+            "DF"});
+            this.cbouf.Location = new System.Drawing.Point(840, 223);
+            this.cbouf.Name = "cbouf";
+            this.cbouf.Size = new System.Drawing.Size(96, 23);
+            this.cbouf.TabIndex = 102;
+            // 
             // txtnumero
             // 
             this.txtnumero.Location = new System.Drawing.Point(711, 224);
@@ -547,7 +612,7 @@
             0,
             0});
             this.txtnumero.Name = "txtnumero";
-            this.txtnumero.Size = new System.Drawing.Size(50, 23);
+            this.txtnumero.Size = new System.Drawing.Size(123, 23);
             this.txtnumero.TabIndex = 23;
             // 
             // groupBox3
@@ -562,7 +627,7 @@
             // 
             // txtnascimento
             // 
-            this.txtnascimento.Location = new System.Drawing.Point(196, 385);
+            this.txtnascimento.Location = new System.Drawing.Point(197, 385);
             this.txtnascimento.Mask = "##/##/####";
             this.txtnascimento.Name = "txtnascimento";
             this.txtnascimento.Size = new System.Drawing.Size(209, 23);
@@ -598,7 +663,7 @@
             // txttelefone1
             // 
             this.txttelefone1.Location = new System.Drawing.Point(30, 305);
-            this.txttelefone1.Mask = "#####-###";
+            this.txttelefone1.Mask = "(##) # ####-####";
             this.txttelefone1.Name = "txttelefone1";
             this.txttelefone1.Size = new System.Drawing.Size(160, 23);
             this.txttelefone1.TabIndex = 30;
@@ -606,7 +671,7 @@
             // txttelefone2
             // 
             this.txttelefone2.Location = new System.Drawing.Point(30, 385);
-            this.txttelefone2.Mask = "#####-###";
+            this.txttelefone2.Mask = "(##) # ####-####";
             this.txttelefone2.Name = "txttelefone2";
             this.txttelefone2.Size = new System.Drawing.Size(160, 23);
             this.txttelefone2.TabIndex = 32;
@@ -630,14 +695,6 @@
             this.label31.Size = new System.Drawing.Size(84, 28);
             this.label31.TabIndex = 86;
             this.label31.Text = "Telefone";
-            // 
-            // txtuf
-            // 
-            this.txtuf.Location = new System.Drawing.Point(778, 223);
-            this.txtuf.Mask = "LL";
-            this.txtuf.Name = "txtuf";
-            this.txtuf.Size = new System.Drawing.Size(158, 23);
-            this.txtuf.TabIndex = 28;
             // 
             // txtcpf
             // 
@@ -734,7 +791,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(778, 192);
+            this.label36.Location = new System.Drawing.Point(840, 192);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(36, 28);
             this.label36.TabIndex = 69;
@@ -902,6 +959,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmVendedor";
+            this.Load += new System.EventHandler(this.frmVendedor_Load);
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -934,7 +992,6 @@
         private Label label5;
         private Label label18;
         private ComboBox cbostatusloja;
-        private MaskedTextBox txtufloja;
         private MaskedTextBox txtcnpjloja;
         private MaskedTextBox txtceploja;
         private TextBox txtbairroloja;
@@ -959,7 +1016,6 @@
         private TextBox txtidloja;
         private Label label3;
         private Label label4;
-        private GroupBox groupBox2;
         private MaskedTextBox txtnascimento;
         private TextBox txtemail;
         private Label label27;
@@ -968,7 +1024,6 @@
         private MaskedTextBox txttelefone2;
         private Label label29;
         private Label label31;
-        private MaskedTextBox txtuf;
         private MaskedTextBox txtcpf;
         private MaskedTextBox txtcep;
         private TextBox txtbairro;
@@ -997,5 +1052,8 @@
         private Button btosair;
         private NumericUpDown txtnumero;
         private Button btoprequisar;
+        private GroupBox groupBox2;
+        private ComboBox cbouf;
+        private ComboBox cboufloja;
     }
 }

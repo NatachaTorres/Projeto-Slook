@@ -22,7 +22,6 @@ C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.dll
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.pdb
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.AssemblyReference.cache
-C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\frmvendedor.frmVendedor.resources
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.Properties.Resources.resources
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.GenerateResource.cache
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.GeneratedMSBuildEditorConfig.editorconfig
@@ -41,3 +40,5 @@ C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.CopyComplete
+C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmCliente.resources
+C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVendedor.resources

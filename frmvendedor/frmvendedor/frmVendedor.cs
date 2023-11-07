@@ -1,7 +1,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace frmvendedor
+namespace slooknatacha
 {
     public partial class frmVendedor : Form
     {
@@ -49,7 +49,7 @@ namespace frmvendedor
             txtnumero.Text = "0";
             txttelefone1.Text = "";
             txttelefone2.Text = "";
-            txtuf.Text = "";
+            cbouf.Text = "";
 
             txtbairroloja.Text = "";
             txtceploja.Text = "";
@@ -64,7 +64,7 @@ namespace frmvendedor
             txtnumeroloja.Text = "0";
             txttelefone1loja.Text = "";
             txttelefone2loja.Text = "";
-            txtufloja.Text = "";
+            cboufloja.Text = "";
             cbostatusloja.SelectedIndex = -1;
             txtobs.Text = "";
             txtnome.Focus();
@@ -86,10 +86,10 @@ namespace frmvendedor
                         "('"+txtnome.Text+"',"+
                         "'"+txtnascimento.Text+"','"+txtcpf.Text+"','"+txtlogradouro.Text+"',"+
                         ""+txtnumero.Text+",'"+txtcomplemento.Text+"','"+txtcep.Text+"',"+
-                        "'"+txtbairro.Text+"','"+txtcidade.Text+"','"+txtuf.Text+"','"+txttelefone1.Text+"',"+
+                        "'"+txtbairro.Text+"','"+txtcidade.Text+"','"+cbouf.Text+"','"+txttelefone1.Text+"',"+
                         "'"+txttelefone2.Text+"','"+txtemail.Text+"','"+txtnomeloja.Text+"','"+txtcnpjloja.Text+"',"+
                         "'"+txtlogradouroloja.Text+"','"+txtnumeroloja.Text+"','"+txtcomplementoloja.Text+"',"+
-                        "'"+txtceploja.Text+"','"+txtbairroloja.Text+"','"+txtcidadeloja.Text+"','"+txtufloja.Text+"',"+
+                        "'"+txtceploja.Text+"','"+txtbairroloja.Text+"','"+txtcidadeloja.Text+"','"+cboufloja.Text+"',"+
                         "'"+txttelefone1loja.Text+"','"+txttelefone2loja.Text+"','"+txtobs.Text +"','"+cbostatusloja.Text+"')"+
                         "select SCOPE_IDENTITY()";
 
@@ -155,7 +155,7 @@ namespace frmvendedor
                     txtcep.Text = leitura[8].ToString();
                     txtbairro.Text = leitura[9].ToString();
                     txtcidade.Text = leitura[10].ToString();
-                    txtuf.Text = leitura[11].ToString();
+                    cbouf.Text = leitura[11].ToString();
                     txttelefone1.Text = leitura[12].ToString();
                     txttelefone2.Text = leitura[13].ToString();
                     txtemail.Text = leitura[14].ToString();
@@ -167,7 +167,7 @@ namespace frmvendedor
                     txtceploja.Text = leitura[20].ToString();
                     txtbairroloja.Text = leitura[21].ToString();
                     txtcidadeloja.Text = leitura[22].ToString();
-                    txtufloja.Text = leitura[23].ToString();
+                    cboufloja.Text = leitura[23].ToString();
                     txttelefone1loja.Text = leitura[24].ToString();
                     txttelefone2loja.Text = leitura[25].ToString();
                     txtobs.Text = leitura[26].ToString();
@@ -204,7 +204,7 @@ namespace frmvendedor
                         "cep_vendedor='" + txtcep.Text + "'," +
                         "bairro_vendedor='" + txtbairro.Text + "'," +
                         "cidade_vendedor='" + txtcidade.Text + "'," +
-                        "uf_vendedor='" + txtuf.Text + "'," +
+                        "uf_vendedor='" + cbouf.Text + "'," +
                         "telefone1_vendedor='" + txttelefone1.Text + "'," +
                         "telefone2_vendedor='" + txttelefone2.Text + "'," +
                         "email_vendedor='" + txtemail.Text + "'," +
@@ -216,7 +216,7 @@ namespace frmvendedor
                         "ceploja_vendedor='" + txtceploja.Text + "'," +
                         "bairroloja_vendedor='" + txtbairroloja.Text + "'," +
                         "cidadeloja_vendedor='" + txtcidadeloja.Text + "'," +
-                        "ufloja_vendedor='" + txtufloja.Text + "'," +
+                        "ufloja_vendedor='" + cboufloja.Text + "'," +
                         "telefone1loja_vendedor='" + txttelefone1loja.Text + "'," +
                         "telefone2loja_vendedor='" + txttelefone2loja.Text + "'," +
                         "obsloja_vendedor='" + txtobs.Text + "'," +
@@ -286,6 +286,11 @@ namespace frmvendedor
             {
                 conn.Close();
             }
+        }
+
+        private void frmVendedor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
