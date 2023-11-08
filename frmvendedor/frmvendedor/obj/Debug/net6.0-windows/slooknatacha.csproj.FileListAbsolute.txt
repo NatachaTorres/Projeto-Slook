@@ -42,3 +42,4 @@ C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.CopyComplete
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmCliente.resources
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVendedor.resources
+C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\MaterialSkin.dll

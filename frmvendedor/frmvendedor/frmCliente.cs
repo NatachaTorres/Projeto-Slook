@@ -197,6 +197,60 @@ namespace slooknatacha
                 conn.Close();
             }
         }
+
+        private void btoalterar_Click(object sender, EventArgs e)
+        {
+            string sql = "update cliente set " +
+                "nome_cliente='" + txtnome.Text + "'," +
+                "nasc_cliente='" + txtnascimento.Text + "'," +
+                "cpf_cliente='" + txtcpf.Text + "'," +
+                "numero_cliente=" + txtnumero.Text + "," +
+                "logradouro_cliente='" + txtlogradouro.Text + "'," +
+                "cep_cliente='" + txtcep.Text + "'," +
+                "bairro_cliente='" + txtbairro.Text + "'," +
+                "cidade_cliente='" + txtcidade.Text + "'," +
+                "comp_cliente='" + txtcomplemento.Text + "'," +
+                "uf_cliente='" + cbouf.Text + "'," +
+                "telefone1_cliente='" + txttelefone1.Text + "'," +
+                "telefone2_cliente='" + txttelefone2.Text + "'," +
+                "email_cliente='" + txtemail.Text + "'," +
+                "obs_cliente='" + txtobs.Text + "'," +
+                "status_cliente='" + cbostatus.SelectedIndex + "'" +
+                "where id_cliente = " + txtid.Text;
+
+
+
+            SqlConnection conn = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+
+            cmd.CommandType = System.Data.CommandType.Text;
+            conn.Open();
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    MessageBox.Show("Dados alterados com sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Erro, não foi possivel alterar os dados");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro, " + ex.ToString());
+
+            }
+
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 
        

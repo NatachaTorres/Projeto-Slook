@@ -125,6 +125,7 @@
             this.btoalterar.TabIndex = 0;
             this.btoalterar.Text = "Alterar";
             this.btoalterar.UseVisualStyleBackColor = true;
+            this.btoalterar.Click += new System.EventHandler(this.btoalterar_Click);
             // 
             // btoexcluir
             // 
