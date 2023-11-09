@@ -44,3 +44,4 @@ C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVendedor.resources
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\MaterialSkin.dll
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmParceria.resources
+C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVenda.resources

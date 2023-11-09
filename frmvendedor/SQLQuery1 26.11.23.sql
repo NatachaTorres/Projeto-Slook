@@ -23,8 +23,6 @@ create table venda
 )
 
 
-
-
 create table cliente
 (
 	id_cliente  int  not null  identity primary key ,
