@@ -30,8 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cboidfuncionario = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtidfuncionario = new System.Windows.Forms.TextBox();
             this.cbofuncionario = new System.Windows.Forms.ComboBox();
             this.btopesquisar = new System.Windows.Forms.Button();
             this.cbostatus = new System.Windows.Forms.ComboBox();
@@ -100,8 +100,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cboidfuncionario);
             this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.txtidfuncionario);
             this.tabPage1.Controls.Add(this.cbofuncionario);
             this.tabPage1.Controls.Add(this.btopesquisar);
             this.tabPage1.Controls.Add(this.cbostatus);
@@ -149,6 +149,15 @@
             this.tabPage1.Text = "LOJA";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cboidfuncionario
+            // 
+            this.cboidfuncionario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboidfuncionario.FormattingEnabled = true;
+            this.cboidfuncionario.Location = new System.Drawing.Point(176, 26);
+            this.cboidfuncionario.Name = "cboidfuncionario";
+            this.cboidfuncionario.Size = new System.Drawing.Size(54, 23);
+            this.cboidfuncionario.TabIndex = 146;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -159,13 +168,6 @@
             this.label14.TabIndex = 145;
             this.label14.Text = "ID funcionario";
             this.label14.Visible = false;
-            // 
-            // txtidfuncionario
-            // 
-            this.txtidfuncionario.Location = new System.Drawing.Point(175, 27);
-            this.txtidfuncionario.Name = "txtidfuncionario";
-            this.txtidfuncionario.Size = new System.Drawing.Size(62, 23);
-            this.txtidfuncionario.TabIndex = 144;
             // 
             // cbofuncionario
             // 
@@ -624,6 +626,7 @@
             this.btoalterar.TabIndex = 1;
             this.btoalterar.Text = "Alterar";
             this.btoalterar.UseVisualStyleBackColor = true;
+            this.btoalterar.Click += new System.EventHandler(this.btoalterar_Click);
             // 
             // btoexcluir
             // 
@@ -633,6 +636,7 @@
             this.btoexcluir.TabIndex = 1;
             this.btoexcluir.Text = "Excluir";
             this.btoexcluir.UseVisualStyleBackColor = true;
+            this.btoexcluir.Click += new System.EventHandler(this.btoexcluir_Click);
             // 
             // btolimpar
             // 
@@ -664,6 +668,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmParceria";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmParceria_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -728,8 +733,8 @@
         private ComboBox cbofuncionario;
         private Label label1;
         private Label label14;
-        private TextBox txtidfuncionario;
         private TextBox txtcontato;
         private Label label20;
+        private ComboBox cboidfuncionario;
     }
 }

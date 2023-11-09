@@ -588,7 +588,7 @@
             this.tabPage3.Controls.Add(this.label42);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(964, 510);
+            this.tabPage3.Size = new System.Drawing.Size(964, 545);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "OBSERVAÇÕES";
             this.tabPage3.UseVisualStyleBackColor = true;

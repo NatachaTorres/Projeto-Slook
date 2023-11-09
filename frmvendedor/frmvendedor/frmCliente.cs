@@ -20,6 +20,7 @@ namespace slooknatacha
             InitializeComponent();
         }
 
+
         private void btosair_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -252,7 +253,6 @@ namespace slooknatacha
             }
         }
 
- 
     }
 
        
