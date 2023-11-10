@@ -10,7 +10,7 @@ namespace slooknatacha
         private void TestarConexao()
         {
             SqlConnection conn = new SqlConnection(stringConexao);
-            
+
 
             try
             {
@@ -72,7 +72,7 @@ namespace slooknatacha
 
         private void btocadastrar_Click(object sender, EventArgs e)
         {
-            
+
             string sql = "insert into vendedor (nome_vendedor,nasc_vendedor," +
                          "cpf_vendedor,logradouro_vendedor,numero_vendedor,comp_vendedor," +
                          "cep_vendedor,bairro_vendedor,cidade_vendedor,uf_vendedor," +
@@ -80,17 +80,17 @@ namespace slooknatacha
                          "cnpjloja_vendedor,logradouroloja_vendedor,numeroloja_vendedor,comploja_vendedor," +
                          "ceploja_vendedor,bairroloja_vendedor,cidadeloja_vendedor,ufloja_vendedor," +
                           "telefone1loja_vendedor,telefone2loja_vendedor,obsloja_vendedor,statusloja_vendedor)" +
-                         
+
                         "values" +
 
-                        "('"+txtnome.Text+"',"+
-                        "'"+txtnascimento.Text+"','"+txtcpf.Text+"','"+txtlogradouro.Text+"',"+
-                        ""+txtnumero.Text+",'"+txtcomplemento.Text+"','"+txtcep.Text+"',"+
-                        "'"+txtbairro.Text+"','"+txtcidade.Text+"','"+cbouf.Text+"','"+txttelefone1.Text+"',"+
-                        "'"+txttelefone2.Text+"','"+txtemail.Text+"','"+txtnomeloja.Text+"','"+txtcnpjloja.Text+"',"+
-                        "'"+txtlogradouroloja.Text+"','"+txtnumeroloja.Text+"','"+txtcomplementoloja.Text+"',"+
-                        "'"+txtceploja.Text+"','"+txtbairroloja.Text+"','"+txtcidadeloja.Text+"','"+cboufloja.Text+"',"+
-                        "'"+txttelefone1loja.Text+"','"+txttelefone2loja.Text+"','"+txtobs.Text +"','"+cbostatusloja.Text+"')"+
+                        "('" + txtnome.Text + "'," +
+                        "'" + txtnascimento.Text + "','" + txtcpf.Text + "','" + txtlogradouro.Text + "'," +
+                        "" + txtnumero.Text + ",'" + txtcomplemento.Text + "','" + txtcep.Text + "'," +
+                        "'" + txtbairro.Text + "','" + txtcidade.Text + "','" + cbouf.Text + "','" + txttelefone1.Text + "'," +
+                        "'" + txttelefone2.Text + "','" + txtemail.Text + "','" + txtnomeloja.Text + "','" + txtcnpjloja.Text + "'," +
+                        "'" + txtlogradouroloja.Text + "','" + txtnumeroloja.Text + "','" + txtcomplementoloja.Text + "'," +
+                        "'" + txtceploja.Text + "','" + txtbairroloja.Text + "','" + txtcidadeloja.Text + "','" + cboufloja.Text + "'," +
+                        "'" + txttelefone1loja.Text + "','" + txttelefone2loja.Text + "','" + txtobs.Text + "','" + cbostatusloja.Text + "')" +
                         "select SCOPE_IDENTITY()";
 
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -98,7 +98,7 @@ namespace slooknatacha
 
             cmd.CommandType = System.Data.CommandType.Text;
             SqlDataReader leitura;
-           
+
             conn.Open();
 
             try
@@ -111,7 +111,7 @@ namespace slooknatacha
                     btolimpar.PerformClick();
 
                     MessageBox.Show("Castro realizado com sucesso código gerado");
-                   
+
                     txtidloja.Text = leitura[0].ToString();
 
                     btoprequisar.PerformClick();
@@ -130,7 +130,7 @@ namespace slooknatacha
 
         private void btoprequisar_Click(object sender, EventArgs e)
         {
-             string sql = "select * from vendedor where id_vendedor=" + txtidloja.Text;
+            string sql = "select * from vendedor where id_vendedor=" + txtidloja.Text;
 
             SqlConnection conn = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conn);
@@ -194,8 +194,8 @@ namespace slooknatacha
 
         private void btoalterar_Click(object sender, EventArgs e)
         {
-            string sql = "update vendedor set " +                        
-                        "nome_vendedor='" + txtnome.Text + "'," +                        
+            string sql = "update vendedor set " +
+                        "nome_vendedor='" + txtnome.Text + "'," +
                         "nasc_vendedor='" + txtnascimento.Text + "'," +
                         "cpf_vendedor='" + txtcpf.Text + "'," +
                         "logradouro_vendedor='" + txtlogradouro.Text + "'," +
@@ -222,7 +222,7 @@ namespace slooknatacha
                         "obsloja_vendedor='" + txtobs.Text + "'," +
                         "statusloja_vendedor='" + cbostatusloja.Text + "'" +
                         "where id_vendedor =  " + txtidloja.Text;
-                        
+
 
 
 
@@ -291,6 +291,29 @@ namespace slooknatacha
         private void frmVendedor_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtlogradouro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtemail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttelefone2loja_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
         }
     }
 }

@@ -20,44 +20,44 @@ namespace slooknatacha
             InitializeComponent();
         }
 
-        private void carregarfkfuncionario()
-        {
+        //private void carregarfkfuncionario()
+        //{
 
-            string sql = "select id_funcionario,nome_funcionario from funcionario";
+        //    string sql = "select id_funcionario,nome_funcionario from funcionario";
 
-            SqlConnection conexao = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conexao);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader leitura;
+        //    SqlConnection conexao = new SqlConnection(stringConexao);
+        //    SqlCommand cmd = new SqlCommand(sql, conexao);
+        //    cmd.CommandType = CommandType.Text;
+        //    SqlDataReader leitura;
 
-            DataTable tabela = new DataTable();
-            //Vai pegar a tabela inteira pra achar o código
-            //o data reader só consegue pegar a tabela toda de uma vez
+        //    DataTable tabela = new DataTable();
+        //    //Vai pegar a tabela inteira pra achar o código
+        //    //o data reader só consegue pegar a tabela toda de uma vez
 
-            conexao.Open();
+        //    conexao.Open();
 
-            try
-            {
-                leitura = cmd.ExecuteReader();
+        //    try
+        //    {
+        //        leitura = cmd.ExecuteReader();
 
-                tabela.Load(leitura);
+        //        tabela.Load(leitura);
 
-                cboidfuncionario.DisplayMember = "id_funcionario";
-                cboidfuncionario.DataSource = tabela;
+        //        cboidfuncionario.DisplayMember = "id_funcionario";
+        //        cboidfuncionario.DataSource = tabela;
 
-                cbofuncionario.DisplayMember = "nome_funcionario";
-                cbofuncionario.DataSource = tabela;
+        //        cbofuncionario.DisplayMember = "nome_funcionario";
+        //        cbofuncionario.DataSource = tabela;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro " + ex.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Erro " + ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        conexao.Close();
+        //    }
+        //}
 
         private void btosair_Click(object sender, EventArgs e)
         {
@@ -92,17 +92,17 @@ namespace slooknatacha
         private void btocadastrar_Click(object sender, EventArgs e)
         {
             string sql = "insert into parceria (id_funcionario_parceria,nome_parceria, cnpj_parceria," +
-                "numero_parceria, logadouro_parceria, comp_parceria, cep_parceria,"+
-                "bairro_parceria, cidade_parceria, uf_parceria, telefone1_parceria,"+
-                "telefone2_parceria, contato_parceria, email_parceria, obs_parceria)"+
+                "numero_parceria, logadouro_parceria, comp_parceria, cep_parceria," +
+                "bairro_parceria, cidade_parceria, uf_parceria, telefone1_parceria," +
+                "telefone2_parceria, contato_parceria, email_parceria, obs_parceria)" +
 
                 "values" +
 
-                "('" + cboidfuncionario.Text + "','" + txtnome.Text+"', '"+txtcnpj.Text+"',"+txtnumero.Text+","+
-                "'"+txtlogradouro.Text+"', '"+txtcomplemento.Text+"',"+
-                "'"+txtcep.Text+"', '"+txtbairro.Text+"', '"+txtcidade.Text+"',"+
-                "'"+cbouf.SelectedIndex+"', '"+txttelefone1.Text+"', '"+txttelefone2.Text+"',"+
-                "'"+txtcontato.Text+"', '"+txtemail.Text+"', '"+txtobs.Text+ "')" +
+                "('" + cboidfuncionario.Text + "','" + txtnome.Text + "', '" + txtcnpj.Text + "'," + txtnumero.Text + "," +
+                "'" + txtlogradouro.Text + "', '" + txtcomplemento.Text + "'," +
+                "'" + txtcep.Text + "', '" + txtbairro.Text + "', '" + txtcidade.Text + "'," +
+                "'" + cbouf.SelectedIndex + "', '" + txttelefone1.Text + "', '" + txttelefone2.Text + "'," +
+                "'" + txtcontato.Text + "', '" + txtemail.Text + "', '" + txtobs.Text + "')" +
                 "select SCOPE_IDENTITY()";
 
 
@@ -199,7 +199,7 @@ namespace slooknatacha
 
         private void frmParceria_Load(object sender, EventArgs e)
         {
-            carregarfkfuncionario();
+            //carregarfkfuncionario();
         }
 
         private void btoexcluir_Click(object sender, EventArgs e)

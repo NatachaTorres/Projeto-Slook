@@ -54,7 +54,7 @@ namespace slooknatacha
             txtemail.Text = "";
             cbouf.Text = "";
             txtobs.Text = "";
-            txtnascimento.Text = "";            
+            txtnascimento.Text = "";
             txtnome.Focus();
         }
 
@@ -97,12 +97,12 @@ namespace slooknatacha
 
                 "values" +
 
-                "('"+txtnome.Text+"','"+txtnascimento.Text+"','"+txtcpf.Text+"',"+
-                ""+txtnumero.Text+","+
-                "'"+txtlogradouro.Text+"','"+txtcep.Text+"','"+txtbairro.Text+"',"+
-                "'"+txtcidade.Text+"','"+txtcomplemento.Text+"','"+cbouf.Text+"',"+
-                "'"+txttelefone1.Text+"','"+txttelefone2.Text+"',"+
-                "'"+txtemail.Text+"','"+txtobs.Text+ "','" + cbostatus.Text + "')" +
+                "('" + txtnome.Text + "','" + txtnascimento.Text + "','" + txtcpf.Text + "'," +
+                "" + txtnumero.Text + "," +
+                "'" + txtlogradouro.Text + "','" + txtcep.Text + "','" + txtbairro.Text + "'," +
+                "'" + txtcidade.Text + "','" + txtcomplemento.Text + "','" + cbouf.Text + "'," +
+                "'" + txttelefone1.Text + "','" + txttelefone2.Text + "'," +
+                "'" + txtemail.Text + "','" + txtobs.Text + "','" + cbostatus.Text + "')" +
                 "select SCOPE_IDENTITY()";
 
 
@@ -255,5 +255,5 @@ namespace slooknatacha
 
     }
 
-       
+
 }

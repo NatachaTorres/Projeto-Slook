@@ -22,83 +22,83 @@ namespace slooknatacha
 
         private void frmVenda_Load(object sender, EventArgs e)
         {
-            carregarfkcliente();
-            carregarfkproduto();
+            //carregarfkcliente();
+            //carregarfkproduto();
         }
 
-        private void carregarfkproduto()
-        {
+        //private void carregarfkproduto()
+        //{
 
-            string sql = "select id_produto,nome_produto from produto";
+        //    string sql = "select id_produto,nome_produto from produto";
 
-            SqlConnection conexao = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conexao);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader leitura;
+        //    SqlConnection conexao = new SqlConnection(stringConexao);
+        //    SqlCommand cmd = new SqlCommand(sql, conexao);
+        //    cmd.CommandType = CommandType.Text;
+        //    SqlDataReader leitura;
 
-            DataTable tabela = new DataTable();
+        //    DataTable tabela = new DataTable();
 
-            conexao.Open();
+        //    conexao.Open();
 
-            try
-            {
-                leitura = cmd.ExecuteReader();
+        //    try
+        //    {
+        //        leitura = cmd.ExecuteReader();
 
-                tabela.Load(leitura);
+        //        tabela.Load(leitura);
 
-                cboidproduto.DisplayMember = "id_produto";
-                cboidproduto.DataSource = tabela;
+        //        cboidproduto.DisplayMember = "id_produto";
+        //        cboidproduto.DataSource = tabela;
 
-                cboproduto.DisplayMember = "nome_produto";
-                cboproduto.DataSource = tabela;
+        //        cboproduto.DisplayMember = "nome_produto";
+        //        cboproduto.DataSource = tabela;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro " + ex.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Erro " + ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        conexao.Close();
+        //    }
+        //}
 
-        private void carregarfkcliente()
-        {
+        //private void carregarfkcliente()
+        //{
 
-            string sql = "select id_cliente,nome_cliente from cliente";
+        //    string sql = "select id_cliente,nome_cliente from cliente";
 
-            SqlConnection conexao = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conexao);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader leitura;
+        //    SqlConnection conexao = new SqlConnection(stringConexao);
+        //    SqlCommand cmd = new SqlCommand(sql, conexao);
+        //    cmd.CommandType = CommandType.Text;
+        //    SqlDataReader leitura;
 
-            DataTable tabela = new DataTable();
+        //    DataTable tabela = new DataTable();
 
-            conexao.Open();
+        //    conexao.Open();
 
-            try
-            {
-                leitura = cmd.ExecuteReader();
+        //    try
+        //    {
+        //        leitura = cmd.ExecuteReader();
 
-                tabela.Load(leitura);
+        //        tabela.Load(leitura);
 
-                cboidcliente.DisplayMember = "id_cliente";
-                cboidcliente.DataSource = tabela;
+        //        cboidcliente.DisplayMember = "id_cliente";
+        //        cboidcliente.DataSource = tabela;
 
-                cbocliente.DisplayMember = "nome_cliente";
-                cbocliente.DataSource = tabela;
+        //        cbocliente.DisplayMember = "nome_cliente";
+        //        cbocliente.DataSource = tabela;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro " + ex.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Erro " + ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        conexao.Close();
+        //    }
+        //}
 
         private void btosair_Click(object sender, EventArgs e)
         {
@@ -112,7 +112,7 @@ namespace slooknatacha
             cbocliente.SelectedIndex = -1;
             txtquantidade.Text = "";
             cboidproduto.SelectedIndex = -1;
-            cboproduto.SelectedIndex = -1;            
+            cboproduto.SelectedIndex = -1;
             txtvalorvenda.Text = "";
             txtobs.Text = "";
             cbocliente.SelectedIndex = -1;
@@ -127,7 +127,7 @@ namespace slooknatacha
 
                "('" + cboidcliente.Text + "','" + cboidproduto.Text + "'," + txtquantidade.Text + "," + txtvalorvenda.Text + "," +
                "'" + txtobs.Text + "')" +
-               "select SCOPE_IDENTITY()";               
+               "select SCOPE_IDENTITY()";
 
 
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -244,27 +244,16 @@ namespace slooknatacha
 
         private void btoalterar_Click(object sender, EventArgs e)
         {
-            string sql = "update parceria set " +
-                            "id_funcionario_parceria= '" + cboidfuncionario.Text + "', " +
-                            "nome_parceria= '" + txtnome.Text + "', " +
-                            "cnpj_parceria= '" + txtcnpj.Text + "', " +
-                            "numero_parceria= " + txtnumero.Text + ", " +
-                            "logadouro_parceria= '" + txtlogradouro.Text + "', " +
-                            "comp_parceria= '" + txtcomplemento.Text + "', " +
-                            "cep_parceria= '" + txtcep.Text + "', " +
-                            "bairro_parceria= '" + txtbairro.Text + "', " +
-                            "cidade_parceria= '" + txtcidade.Text + "', " +
-                            "uf_parceria= '" + cbouf.SelectedIndex + "', " +
-                            "telefone1_parceria= '" + txttelefone1.Text + "', " +
-                            "telefone2_parceria= '" + txttelefone2.Text + "', " +
-                            "contato_parceria= '" + txtcontato.Text + "', " +
-                            "email_parceria= '" + txtemail.Text + "', " +
-                            "obs_parceria= '" + txtobs.Text + "', " +
-                            "status_parceria= '" + cbostatus.Text + "'" +
+            string sql = "update venda set " +
+                            "id_venda = '" + txtid.Text + "' , " +
+                            "id_cliente_venda = '" + cbocliente.Text + "' , " +
+                            "id_produto_venda = '" + cboidproduto.Text + "' , " +
+                            "data_venda = '" + txtdata.Text + "' , " +
+                            "qtd_venda = " + txtquantidade.Text + "," +
+                            "vvenda_venda = '" + txtvalorvenda.Text + "' , " +
+                            "obs_venda = '" + txtobs.Text + "' , " +
+                            "status_venda = '" + cbostatus.Text + "'" +
                             "where id_parceria = " + txtid.Text;
-
-
-
 
             SqlConnection conn = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conn);
@@ -296,6 +285,16 @@ namespace slooknatacha
             {
                 conn.Close();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Venda_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

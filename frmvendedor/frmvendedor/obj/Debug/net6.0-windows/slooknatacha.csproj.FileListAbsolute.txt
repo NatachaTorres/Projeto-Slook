@@ -45,3 +45,32 @@ C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\MaterialSkin.dll
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmParceria.resources
 C:\Users\natacha.rtorres\source\repos\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVenda.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.AssemblyReference.cache
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmCliente.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmParceria.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVenda.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.frmVendedor.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.Properties.Resources.resources
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.GenerateResource.cache
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.AssemblyInfoInputs.cache
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.AssemblyInfo.cs
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.CoreCompileInputs.cache
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\refint\slooknatacha.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.pdb
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.exe
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.deps.json
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.runtimeconfig.json
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\slooknatacha.pdb
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.csproj.CopyComplete
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\slooknatacha.genruntimeconfig.cache
+C:\Users\natac\OneDrive\Documentos\C#\Projeto Slook\Projeto-Slook\frmvendedor\frmvendedor\obj\Debug\net6.0-windows\ref\slooknatacha.dll
