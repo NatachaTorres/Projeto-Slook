@@ -72,6 +72,11 @@ namespace slooknatacha
 
         private void btocadastrar_Click(object sender, EventArgs e)
         {
+            string cpf = txtcpf.Text;
+            cpf = cpf.Replace(",", ".");
+
+            string cnpj = txtcnpjloja.Text;
+            cnpj = cnpj.Replace(",", ".");
 
             string sql = "insert into vendedor (nome_vendedor,nasc_vendedor," +
                          "cpf_vendedor,logradouro_vendedor,numero_vendedor,comp_vendedor," +
@@ -84,10 +89,10 @@ namespace slooknatacha
                         "values" +
 
                         "('" + txtnome.Text + "'," +
-                        "'" + txtnascimento.Text + "','" + txtcpf.Text + "','" + txtlogradouro.Text + "'," +
+                        "'" + txtnascimento.Text + "','" + cpf + "','" + txtlogradouro.Text + "'," +
                         "" + txtnumero.Text + ",'" + txtcomplemento.Text + "','" + txtcep.Text + "'," +
                         "'" + txtbairro.Text + "','" + txtcidade.Text + "','" + cbouf.Text + "','" + txttelefone1.Text + "'," +
-                        "'" + txttelefone2.Text + "','" + txtemail.Text + "','" + txtnomeloja.Text + "','" + txtcnpjloja.Text + "'," +
+                        "'" + txttelefone2.Text + "','" + txtemail.Text + "','" + txtnomeloja.Text + "','" + cnpj + "'," +
                         "'" + txtlogradouroloja.Text + "','" + txtnumeroloja.Text + "','" + txtcomplementoloja.Text + "'," +
                         "'" + txtceploja.Text + "','" + txtbairroloja.Text + "','" + txtcidadeloja.Text + "','" + cboufloja.Text + "'," +
                         "'" + txttelefone1loja.Text + "','" + txttelefone2loja.Text + "','" + txtobs.Text + "','" + cbostatusloja.Text + "')" +
@@ -194,10 +199,18 @@ namespace slooknatacha
 
         private void btoalterar_Click(object sender, EventArgs e)
         {
+
+            string cpf = txtcpf.Text;
+            cpf = cpf.Replace(",", ".");
+
+            string cnpj = txtcnpjloja.Text;
+            cnpj = cnpj.Replace(",", ".");
+
+
             string sql = "update vendedor set " +
                         "nome_vendedor='" + txtnome.Text + "'," +
                         "nasc_vendedor='" + txtnascimento.Text + "'," +
-                        "cpf_vendedor='" + txtcpf.Text + "'," +
+                        "cpf_vendedor='" + cpf + "'," +
                         "logradouro_vendedor='" + txtlogradouro.Text + "'," +
                         "numero_vendedor=" + txtnumero.Text + "," +
                         "comp_vendedor='" + txtcomplemento.Text + "'," +
@@ -209,7 +222,7 @@ namespace slooknatacha
                         "telefone2_vendedor='" + txttelefone2.Text + "'," +
                         "email_vendedor='" + txtemail.Text + "'," +
                         "nomeloja_vendedor='" + txtnomeloja.Text + "'," +
-                        "cnpjloja_vendedor='" + txtcnpjloja.Text + "'," +
+                        "cnpjloja_vendedor='" + cnpj + "'," +
                         "logradouroloja_vendedor='" + txtlogradouroloja.Text + "'," +
                         "numeroloja_vendedor='" + txtnumeroloja.Text + "'," +
                         "comploja_vendedor='" + txtcomplementoloja.Text + "'," +

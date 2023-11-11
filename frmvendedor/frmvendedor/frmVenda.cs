@@ -120,7 +120,9 @@ namespace slooknatacha
         }
 
         private void btocadastrar_Click(object sender, EventArgs e)
-        {
+        { 
+
+
             string sql = "insert into venda (id_cliente_venda,id_produto_venda,qtd_venda,vvenda_venda,obs_venda)" +
 
               "values" +

@@ -90,14 +90,19 @@ namespace slooknatacha
 
         private void btocadastrar_Click(object sender, EventArgs e)
         {
-            string sql = "insert into cliente (nome_cliente, nasc_cliente, cpf_cliente, numero_cliente," +
+            //criar uma variavel para os locais que vão receber valor numerico
+            //para conseguir trocar a virgula por ponto 
+            string cpf = txtcpf.Text;
+            cpf = cpf.Replace(",", ".");            
+
+            string sql = "set dateformat dmy insert into cliente (nome_cliente, nasc_cliente, cpf_cliente, numero_cliente," +
                 "logradouro_cliente, cep_cliente, bairro_cliente, cidade_cliente," +
                 "comp_cliente, uf_cliente, telefone1_cliente, telefone2_cliente, email_cliente," +
                 "obs_cliente, status_cliente)" +
 
                 "values" +
 
-                "('" + txtnome.Text + "','" + txtnascimento.Text + "','" + txtcpf.Text + "'," +
+                "('" + txtnome.Text + "','" + txtnascimento.Text + "','" + cpf + "'," +
                 "" + txtnumero.Text + "," +
                 "'" + txtlogradouro.Text + "','" + txtcep.Text + "','" + txtbairro.Text + "'," +
                 "'" + txtcidade.Text + "','" + txtcomplemento.Text + "','" + cbouf.Text + "'," +
@@ -201,10 +206,13 @@ namespace slooknatacha
 
         private void btoalterar_Click(object sender, EventArgs e)
         {
+            string cpf = txtcpf.Text;
+            cpf = cpf.Replace(",", ".");
+
             string sql = "update cliente set " +
                 "nome_cliente='" + txtnome.Text + "'," +
                 "nasc_cliente='" + txtnascimento.Text + "'," +
-                "cpf_cliente='" + txtcpf.Text + "'," +
+                "cpf_cliente='" + cpf + "'," +
                 "numero_cliente=" + txtnumero.Text + "," +
                 "logradouro_cliente='" + txtlogradouro.Text + "'," +
                 "cep_cliente='" + txtcep.Text + "'," +
