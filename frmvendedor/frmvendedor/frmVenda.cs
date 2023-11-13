@@ -298,5 +298,11 @@ namespace slooknatacha
         {
 
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            frmParceria frm = new frmParceria();
+            frm.ShowDialog();
+        }
     }
 }

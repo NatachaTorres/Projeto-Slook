@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\natac\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\natac\\.nuget\\packages",
+      "C:\\Users\\natacha.rtorres\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\natacha.rtorres\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
