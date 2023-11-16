@@ -64,7 +64,6 @@
             this.btoexcluir = new System.Windows.Forms.Button();
             this.btolimpar = new System.Windows.Forms.Button();
             this.btosair = new System.Windows.Forms.Button();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.tabControl1.SuspendLayout();
             this.Venda.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -93,7 +92,7 @@
             this.Venda.Controls.Add(this.label11);
             this.Venda.Location = new System.Drawing.Point(4, 24);
             this.Venda.Name = "Venda";
-            this.Venda.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Venda.Padding = new System.Windows.Forms.Padding(3);
             this.Venda.Size = new System.Drawing.Size(705, 341);
             this.Venda.TabIndex = 0;
             this.Venda.Text = "VENDA";
@@ -389,7 +388,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.materialButton1);
             this.groupBox2.Controls.Add(this.btocadastrar);
             this.groupBox2.Controls.Add(this.btoalterar);
             this.groupBox2.Controls.Add(this.btoexcluir);
@@ -436,6 +434,7 @@
             this.btolimpar.TabIndex = 10;
             this.btolimpar.Text = "Limpar";
             this.btolimpar.UseVisualStyleBackColor = true;
+            this.btolimpar.Click += new System.EventHandler(this.btolimpar_Click_1);
             // 
             // btosair
             // 
@@ -445,26 +444,7 @@
             this.btosair.TabIndex = 11;
             this.btosair.Text = "Sair";
             this.btosair.UseVisualStyleBackColor = true;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(114, 16);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(158, 36);
-            this.materialButton1.TabIndex = 146;
-            this.materialButton1.Text = "materialButton1";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
+            this.btosair.Click += new System.EventHandler(this.btosair_Click_1);
             // 
             // frmVenda
             // 
@@ -487,7 +467,6 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,6 +510,5 @@
         private ComboBox cboproduto;
         private GroupBox groupBox3;
         private Button btopesquisar;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

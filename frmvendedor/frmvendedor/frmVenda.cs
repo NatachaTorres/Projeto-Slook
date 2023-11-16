@@ -22,83 +22,83 @@ namespace slooknatacha
 
         private void frmVenda_Load(object sender, EventArgs e)
         {
-            //carregarfkcliente();
-            //carregarfkproduto();
+            carregarfkcliente();
+            carregarfkproduto();
         }
 
-        //private void carregarfkproduto()
-        //{
+        private void carregarfkproduto()
+        {
 
-        //    string sql = "select id_produto,nome_produto from produto";
+            string sql = "select id_produto,nome_produto from produto";
 
-        //    SqlConnection conexao = new SqlConnection(stringConexao);
-        //    SqlCommand cmd = new SqlCommand(sql, conexao);
-        //    cmd.CommandType = CommandType.Text;
-        //    SqlDataReader leitura;
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader leitura;
 
-        //    DataTable tabela = new DataTable();
+            DataTable tabela = new DataTable();
 
-        //    conexao.Open();
+            conexao.Open();
 
-        //    try
-        //    {
-        //        leitura = cmd.ExecuteReader();
+            try
+            {
+                leitura = cmd.ExecuteReader();
 
-        //        tabela.Load(leitura);
+                tabela.Load(leitura);
 
-        //        cboidproduto.DisplayMember = "id_produto";
-        //        cboidproduto.DataSource = tabela;
+                cboidproduto.DisplayMember = "id_produto";
+                cboidproduto.DataSource = tabela;
 
-        //        cboproduto.DisplayMember = "nome_produto";
-        //        cboproduto.DataSource = tabela;
+                cboproduto.DisplayMember = "nome_produto";
+                cboproduto.DataSource = tabela;
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Erro " + ex.ToString());
-        //    }
-        //    finally
-        //    {
-        //        conexao.Close();
-        //    }
-        //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " + ex.ToString());
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
 
-        //private void carregarfkcliente()
-        //{
+        private void carregarfkcliente()
+        {
 
-        //    string sql = "select id_cliente,nome_cliente from cliente";
+            string sql = "select id_cliente,nome_cliente from cliente";
 
-        //    SqlConnection conexao = new SqlConnection(stringConexao);
-        //    SqlCommand cmd = new SqlCommand(sql, conexao);
-        //    cmd.CommandType = CommandType.Text;
-        //    SqlDataReader leitura;
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader leitura;
 
-        //    DataTable tabela = new DataTable();
+            DataTable tabela = new DataTable();
 
-        //    conexao.Open();
+            conexao.Open();
 
-        //    try
-        //    {
-        //        leitura = cmd.ExecuteReader();
+            try
+            {
+                leitura = cmd.ExecuteReader();
 
-        //        tabela.Load(leitura);
+                tabela.Load(leitura);
 
-        //        cboidcliente.DisplayMember = "id_cliente";
-        //        cboidcliente.DataSource = tabela;
+                cboidcliente.DisplayMember = "id_cliente";
+                cboidcliente.DataSource = tabela;
 
-        //        cbocliente.DisplayMember = "nome_cliente";
-        //        cbocliente.DataSource = tabela;
+                cbocliente.DisplayMember = "nome_cliente";
+                cbocliente.DataSource = tabela;
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Erro " + ex.ToString());
-        //    }
-        //    finally
-        //    {
-        //        conexao.Close();
-        //    }
-        //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " + ex.ToString());
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
 
         private void btosair_Click(object sender, EventArgs e)
         {
@@ -303,6 +303,16 @@ namespace slooknatacha
         {
             frmParceria frm = new frmParceria();
             frm.ShowDialog();
+        }
+
+        private void btolimpar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btosair_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -20,44 +20,44 @@ namespace slooknatacha
             InitializeComponent();
         }
 
-        //private void carregarfkfuncionario()
-        //{
+        private void carregarfkfuncionario()
+        {
 
-        //    string sql = "select id_funcionario,nome_funcionario from funcionario";
+            string sql = "select id_funcionario,nome_funcionario from funcionario";
 
-        //    SqlConnection conexao = new SqlConnection(stringConexao);
-        //    SqlCommand cmd = new SqlCommand(sql, conexao);
-        //    cmd.CommandType = CommandType.Text;
-        //    SqlDataReader leitura;
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader leitura;
 
-        //    DataTable tabela = new DataTable();
-        //    //Vai pegar a tabela inteira pra achar o código
-        //    //o data reader só consegue pegar a tabela toda de uma vez
+            DataTable tabela = new DataTable();
+            //Vai pegar a tabela inteira pra achar o código
+            //o data reader só consegue pegar a tabela toda de uma vez
 
-        //    conexao.Open();
+            conexao.Open();
 
-        //    try
-        //    {
-        //        leitura = cmd.ExecuteReader();
+            try
+            {
+                leitura = cmd.ExecuteReader();
 
-        //        tabela.Load(leitura);
+                tabela.Load(leitura);
 
-        //        cboidfuncionario.DisplayMember = "id_funcionario";
-        //        cboidfuncionario.DataSource = tabela;
+                cboidfuncionario.DisplayMember = "id_funcionario";
+                cboidfuncionario.DataSource = tabela;
 
-        //        cbofuncionario.DisplayMember = "nome_funcionario";
-        //        cbofuncionario.DataSource = tabela;
+                cbofuncionario.DisplayMember = "nome_funcionario";
+                cbofuncionario.DataSource = tabela;
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Erro " + ex.ToString());
-        //    }
-        //    finally
-        //    {
-        //        conexao.Close();
-        //    }
-        //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " + ex.ToString());
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
 
         private void btosair_Click(object sender, EventArgs e)
         {
@@ -286,6 +286,11 @@ namespace slooknatacha
             {
                 conn.Close();
             }
+        }
+
+        private void btosair_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

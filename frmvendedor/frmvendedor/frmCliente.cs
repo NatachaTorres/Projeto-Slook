@@ -261,6 +261,35 @@ namespace slooknatacha
             }
         }
 
+        private void txtsair_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btolimpar_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btoexcluir_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btoalterar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btocadastrar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btopesquisar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
