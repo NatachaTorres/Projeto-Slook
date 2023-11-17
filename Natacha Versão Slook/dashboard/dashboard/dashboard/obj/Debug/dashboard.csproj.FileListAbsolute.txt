@@ -1,0 +1,12 @@
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.exe.config
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.exe
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.pdb
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\MaterialSkin.dll
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.AssemblyReference.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.Properties.Resources.resources
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.teste2.resources
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.GenerateResource.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.CoreCompileInputs.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.CopyComplete
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.exe
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.pdb

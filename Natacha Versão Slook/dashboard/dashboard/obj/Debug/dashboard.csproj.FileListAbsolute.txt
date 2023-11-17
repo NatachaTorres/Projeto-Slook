@@ -1,0 +1,28 @@
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.exe.config
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.exe
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\dashboard.pdb
+C:\Users\natac\source\repos\dashboard\dashboard\bin\Debug\MaterialSkin.dll
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.AssemblyReference.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.Properties.Resources.resources
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.teste2.resources
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.GenerateResource.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.CoreCompileInputs.cache
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.csproj.CopyComplete
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.exe
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.pdb
+C:\Users\natac\source\repos\dashboard\dashboard\obj\Debug\dashboard.frmCliente.resources
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\bin\Debug\dashboard.exe.config
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\bin\Debug\dashboard.exe
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\bin\Debug\dashboard.pdb
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\bin\Debug\MaterialSkin.dll
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.csproj.AssemblyReference.cache
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.csproj.SuggestedBindingRedirects.cache
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.frmCliente.resources
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.Properties.Resources.resources
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.teste2.resources
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.csproj.GenerateResource.cache
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.csproj.CoreCompileInputs.cache
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.csproj.CopyComplete
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.exe
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.pdb
+C:\Users\natacha.rtorres\source\repos\dashboard 15.11\dashboard\dashboard\obj\Debug\dashboard.frmParceria.resources
