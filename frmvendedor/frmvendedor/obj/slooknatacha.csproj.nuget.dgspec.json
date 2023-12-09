@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {}
+    "C:\\Users\\natac\\OneDrive\\Documentos\\C#\\Projeto Slook\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {
+    "C:\\Users\\natac\\OneDrive\\Documentos\\C#\\Projeto Slook\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
+        "projectUniqueName": "C:\\Users\\natac\\OneDrive\\Documentos\\C#\\Projeto Slook\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
         "projectName": "slooknatacha",
-        "projectPath": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
-        "packagesPath": "C:\\Users\\natacha.rtorres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natacha.rtorres\\source\\repos\\Projeto-Slook\\frmvendedor\\frmvendedor\\obj\\",
+        "projectPath": "C:\\Users\\natac\\OneDrive\\Documentos\\C#\\Projeto Slook\\Projeto-Slook\\frmvendedor\\frmvendedor\\slooknatacha.csproj",
+        "packagesPath": "C:\\Users\\natac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\natac\\OneDrive\\Documentos\\C#\\Projeto Slook\\Projeto-Slook\\frmvendedor\\frmvendedor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\natacha.rtorres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\natac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -59,7 +59,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -120,7 +120,7 @@ namespace slooknatacha
         }
 
         private void btocadastrar_Click(object sender, EventArgs e)
-        { 
+        {
 
 
             string sql = "insert into venda (id_cliente_venda,id_produto_venda,qtd_venda,vvenda_venda,obs_venda)" +
@@ -311,6 +311,16 @@ namespace slooknatacha
         }
 
         private void btosair_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btopesquisar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btoexcluir_Click_1(object sender, EventArgs e)
         {
 
         }
